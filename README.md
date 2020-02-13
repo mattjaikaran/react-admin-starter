@@ -1,6 +1,6 @@
 # React Admin Starter
 
-This project was built with react-admin.
+This project was built with react-admin. Implemented user permissions boilerplate.
 
 ## Available Scripts
 
