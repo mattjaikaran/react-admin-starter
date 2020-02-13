@@ -3,11 +3,11 @@ import { Admin, Resource } from 'react-admin'
 import jsonServerProvider from 'ra-data-json-server'
 import { UserList } from './components/Users'
 import { PostList, PostEdit, PostCreate } from './components/Posts'
-import authProvider from './authProvider'
 import Dashboard from './components/Dashboard'
 import PostIcon from '@material-ui/icons/Book'
 import UserIcon from '@material-ui/icons/Group'
-// import dataProvider from './dataProvider'
+import authProvider from './utils/authProvider'
+// import dataProvider from './utils/dataProvider'
 
 const dataProvider = jsonServerProvider('http://jsonplaceholder.typicode.com')
 

@@ -9,8 +9,12 @@ const Login = ({ theme }) => {
   const notify = useNotify()
   const submit = (e) => {
     e.preventDefault()
-    login({ email, password })
-    .catch(() => notify('Invalid email or password'))
+    try {
+      login({ email, password })
+    } catch (err) {
+      notify('Invalid email or password')
+      console.error(err.message)
+    }
   }
 
   return (
